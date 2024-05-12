@@ -1,0 +1,414 @@
+
+body{
+    background-image: url("./images/space.jpg");
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .nav-link:hover  {
+  color: white !important;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active:hover,
+.navbar-nav .nav-link:active  {
+  color: white !important;
+}
+
+.title{
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 2px;
+  
+}
+
+p{
+  font-family: "Radio Canada Big", sans-serif;;
+}
+.blur-background {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo transparente */
+  backdrop-filter: blur(8px); /* Efecto de desenfoque */
+} 
+
+/* NAVBAR STYLE*/
+.btn2 {
+  position: relative;
+  display: inline-block;
+  padding: 5px 5px;
+  margin-left: 5px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  transition: 0.3s;
+
+}
+
+.btn2::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - -2px);
+   background-color: #010101;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 50px);
+  background-color: #010101;
+  transition: 0.3s ease-out;
+  transform: scaleY(1);
+}
+
+.btn2:hover::before {
+  transform: translateY(-25px);
+  height: 0;
+}
+
+.btn2:hover::after {
+  transform: scaleX(0);
+  transition-delay: 0.15s;
+}
+
+.btn2:hover {
+  border: 2px solid #fefefe;
+}
+
+.btn2 span {
+  position: relative;
+  z-index: 3;
+}
+
+button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
+
+
+/* SOCIAL STYLE*/
+/* before adding the photo to the div with the "card-photo" class, in the css clear the styles for .card-photo and remove .card-photo::before and .card-photo::after, then set the desired styles for .card- photo. */
+
+.cardSocial {
+  width: fit-content;
+  height: fit-content;
+  /* background-color: rgb(238, 238, 238); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* padding: 25px 25px; */
+  gap: 10px;
+  /* box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055); */
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: .3s;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: .3s;
+}
+/* twitter*/
+.containerTwo:hover {
+  background-color: #593786;
+  transition-duration: .3s;
+}
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: .3s;
+}
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: .3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: .3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+
+/* Projects card*/
+
+.card {
+  
+  aspect-ratio: 16/9;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 0 0 5px #ffffff80;
+  position: relative; /* Añadido */
+}
+
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+  }
+
+
+.card-body {
+  position: absolute; /*Añadido */
+  bottom: 0; /* Añadido */
+  left: 0; /* Añadido */
+  width: 100%; /* Añadido */
+  height: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-weight: 500;
+}
+.card-title {
+  margin: 0;
+  font-size: 25px;
+  color: #333;
+  font-weight: 700;
+  text-align: center;
+}
+
+
+@media (max-width: 417px) {
+  .card-text{
+    display: none;
+  }
+  .icons-tecnology{
+    margin-top: 5px;
+    flex-direction: column;
+    padding: 5px;
+  }
+  .icons-tecnology > div > svg {
+    width: 40px;
+    height: 40px;
+    padding-bottom: 10px;
+  }
+}
+
+.card-text {
+  margin: 5px;
+  font-size: 13px;
+  color: #777;
+  line-height: 1.4;
+}
+
+.card:hover .card-body {
+  transform: translateY(0); /* Añadido */
+}
+.card-btn {
+  padding: 10px;
+  border-radius: 8px;
+  background: #777;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+
+.card-btn:hover{
+  color: #333;
+  
+  background: #777;
+
+}
+
+.icons-tecnology svg{
+  margin-top: 7px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+/*FIN PROJECT CARD*/
+
+
+/*SKILL*/
+
+.tecnologias > div {
+  position: relative;
+  display: flex;
+  flex-direction: column; /* Apila el ícono y el texto verticalmente */
+  align-items: center; /* Centra horizontalmente el ícono y el texto */
+  justify-content: center; /* Centra verticalmente el ícono y el texto */
+  transition: transform 0.3s ease-in-out;
+}
+
+.tecnologias > div > i {
+  font-size: 4rem;
+}
+
+.tecnologias > div > p {
+  margin-top: 5px; /* Espacio entre el ícono y el texto */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  font-weight: 600;
+}
+
+.tecnologias > div:hover {
+  transform: translateY(-5px);
+}
+
+.tecnologias > div:hover > p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* HOVER TECNOLOGY */
+
+.html5-icon:hover > i{
+  color: #E44D26;
+}
+.html5-icon:hover >p {
+  color: #E44D26;
+
+}
+
+.css3-icon:hover > i{
+  color:#1572B6
+}
+
+.css3-icon:hover > p {
+  color:#1572B6
+}
+.react-icon:hover > i{
+  color:  #61DAFB
+}
+
+.react-icon:hover > p {
+  color:  #61DAFB
+}
+
+.sass-icon:hover > i{
+  color: #CC6699
+}
+
+.sass-icon:hover > p {
+  color: #CC6699
+
+}
+
+.less-icon:hover > i{
+  color:#2c4872
+
+}
+
+.less-icon:hover > p {
+  color:#2c4872
+
+
+
+}
+
+.tailwind-icon:hover > i{
+  color: #38B2AC
+}
+
+.tailwind-icon:hover > p {
+  color: #38B2AC
+
+}
+
+.bootstrap-icon:hover > i{
+  color: #7952B3
+}
+
+.bootstrap-icon:hover > p {
+  color: #7952B3
+
+}
+
+.git-icon:hover > i{
+  color:  #F05032
+}
+
+.git-icon:hover > p {
+  color:  #F05032
+}
+.typescript-icon:hover > i{
+  color: #3178C6
+}
+
+.typescript-icon:hover > p {
+  color: #3178C6
+
+}
+
+.javascript-icon:hover > i{
+  color: #F7DF1E
+}
+
+.javascript-icon:hover > p {
+  color: #F7DF1E
+
+}
+
+.image-container {
+  margin-top: 50px; /* Ajusta el margen superior según sea necesario */
+}
+
+.floating-image {
+  width: 100%;
+  height: auto;
+  animation: floatAnimation 3s ease infinite; /* Animación infinita */
+}
+
+@keyframes floatAnimation {
+  0% {
+    transform: translateY(0); /* Estado inicial */
+  }
+  50% {
+    transform: translateY(-20px); /* Flotar hacia arriba */
+  }
+  100% {
+    transform: translateY(0); /* Volver al estado inicial */
+  }
+}
