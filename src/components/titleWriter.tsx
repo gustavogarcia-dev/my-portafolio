@@ -1,6 +1,10 @@
 import Typewriter from 'typewriter-effect';
 
-export default function TitleWriter({ texto, texto2}){
+interface TitleWriterProps {
+    texto: string;
+    texto2: string;
+  }
+export default function TitleWriter({texto, texto2}:TitleWriterProps){
 
     return (
         <div className="">

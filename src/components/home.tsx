@@ -1,6 +1,6 @@
 import TitleWriter from '../components/titleWriter';
 import homePage from '../images/home-page.jpeg'
-import perfil from "../images/profil.jpg"
+// import perfil from "../images/profil.jpg"
 
 export default function Home() {
     return (
