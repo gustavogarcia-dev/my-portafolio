@@ -15,19 +15,14 @@ function App() {
 
 
     <div>
-      <NAV />
-          <Routes>
-            
-              <Route  path="/" Component={Home} />
-              <Route  path="/sobre-mi" Component={SobreMi} />
-              <Route path="/proyectos"  Component={Proyectos}/>
-              <Route  path="/skill" Component={Skill} />
-              
-                
-            </Routes>
-      
-      
-    </div>
+    <NAV />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/sobre-mi" element={<SobreMi />} />
+      <Route path="/proyectos" element={<Proyectos />} />
+      <Route path="/skill" element={<Skill />} />
+    </Routes>
+  </div>
 
   )
 }
