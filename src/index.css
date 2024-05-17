@@ -235,6 +235,26 @@ button {
     height: 40px;
     padding-bottom: 10px;
   }
+
+  
+}
+@media (max-width: 440px) {
+ .project-2 .card-text{
+      display: none;
+ }
+ .project-2 .icons-tecnology{
+  margin-top: 5px;
+  flex-direction: column;
+  padding: 5px;
+}
+.project-2 .icons-tecnology > div > svg {
+  width: 40px;
+  height: 40px;
+  padding-bottom: 10px;
+}
+.project-2 .card-title{
+  font-size: large;
+}
 }
 
 .card-text {
