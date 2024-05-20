@@ -3,12 +3,12 @@ import cotizador from "../images/projects/cotizador-prestamos.png"
 export default function Proyectos(){
 
     return(
-        <div id="projects" className="container  blur-background  mt-5 animate__animated animate__fadeIn">
+        <div id="projects" className="container  blur-background  mt-5 animate__animated animate__fadeIn overflow-hidden">
             
             <h2 className="text-center text-white mb-4 title fs-1 animate__animated animate__rubberBand animate__delay-1s">Proyectos</h2>
            
             
-            <div className="row projects-list p-4 mb-5">
+            <div className="row projects-list justify-content-center p-4 mb-5 ">
 
                 <div className="project-1 col-xs-12  col-lg-5 col-md-8 col-sm-12 mb-4">
                     <div className="card">
