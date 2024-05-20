@@ -176,8 +176,12 @@ button {
   fill: rgb(255, 255, 255);
 }
 
-.socialContainer:hover .socialSvg {
+.socialContainer:hover .socialSvg{
   animation: slide-in-top 0.3s both;
+}
+.socialContainer:hover  > .text-cv {
+  animation: slide-in-top 0.3s both;
+
 }
 
 @keyframes slide-in-top {
