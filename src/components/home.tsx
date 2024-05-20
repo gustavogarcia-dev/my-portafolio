@@ -44,7 +44,7 @@ export default function Home() {
                 <picture>
                     <source srcSet={homePage} type="image/webp" />
                     {/* <source srcSet={homePage} type="image/jpeg" /> */}
-                    <img className="img-fluid" src={homePage} alt="Perfil" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <img className="img-fluid" src={homePage} alt="Perfil" style={{ objectFit: "cover" }} />
                 </picture>
             </div>
         </div>
