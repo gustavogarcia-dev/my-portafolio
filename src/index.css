@@ -226,7 +226,7 @@ button {
   left: 0; /* Añadido */
   width: 100%; /* Añadido */
   height: 100%;
-  padding: 15px;
+  padding: 25px;
   box-sizing: border-box;
   background-color: #f2f2f2;
   transform: rotateX(-90deg);
@@ -241,11 +241,37 @@ button {
   font-weight: 700;
   text-align: center;
 }
-
-
-@media (max-width: 417px) {
+@media (min-width: 1200px) {
+  .card-title{
+    padding-bottom: 20px;
+    font-size: 35px;
+  }
+}
+.card-text{
+  font-size: large;
+}
+@media(max-width: 469px) {
+  .card-body{
+    padding-top: 5px;
+    padding-bottom: 0px;
+    
+  }
+  .project{
+    padding: 0%;
+  }
+  
+}
+@media (max-width: 420px) {
   .card-text{
     display: none;
+  }
+  .card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .card-title{
+    font-size: large;
   }
   .icons-tecnology{
     margin-top: 5px;
@@ -255,29 +281,12 @@ button {
   .icons-tecnology > div > svg {
     width: 40px;
     height: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 10%;
   }
 
   
 }
-@media (max-width: 440px) {
- .project-2 .card-text{
-      display: none;
- }
- .project-2 .icons-tecnology{
-  margin-top: 5px;
-  flex-direction: column;
-  padding: 5px;
-}
-.project-2 .icons-tecnology > div > svg {
-  width: 40px;
-  height: 40px;
-  padding-bottom: 10px;
-}
-.project-2 .card-title{
-  font-size: large;
-}
-}
+
 
 .card-text {
   margin: 5px;
