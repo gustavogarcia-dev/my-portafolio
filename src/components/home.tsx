@@ -1,6 +1,6 @@
 import TitleWriter from '../components/titleWriter';
 import homePage from '../images/home-page.webp.webp'
-import CV from '../Documents/Gustavo Garcia frontend.pdf'
+import CV from '../Documents/Gustavo García frontend.pdf';
 export default function Home() {
     return (
         <div id='home' className="container py-5 container-sm  d-flex  flex-column-reverse flex-md-row   ">
