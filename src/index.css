@@ -442,6 +442,15 @@ button {
 
 }
 
+.redux-icon:hover > i{
+  color: #8561bb
+}
+
+.redux-icon:hover > p {
+  color: #8561bb
+
+}
+
 .image-container {
   margin-top: 50px; /* Ajusta el margen superior según sea necesario */
 }

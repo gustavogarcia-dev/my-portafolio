@@ -59,7 +59,11 @@ export default function Skill(){
                     <p className="text-3xl text-center">JavaScript</p>
 
                 </div>
+                <div className="redux-icon p-2 ">
+                    <i className='bx bxl-redux animate__animated animate__bounceInRight'></i>
+                    <p className="text-3xl text-center">Redux</p>
 
+                </div>
             </div>
     </div>
     )
